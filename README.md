@@ -12,19 +12,19 @@ Menschen; es gibt keine richtige Gruppenwahl, nur Abstände zu den Mitgliedern.
 
 ## Warum dieses Problem
 
-**Die Gruppenentscheidung passt fast immer zu jemandem, die Gruppenordnung fast nie, und die Skala der Urteile entscheidet mit.** Die Kernfrage der Demo: Wen entscheidet die Gruppe, wie
+**Die Gruppenentscheidung passt fast immer zu jemandem, die Gruppenordnung ist selten genau die eines Mitglieds, und die Skala der Urteile entscheidet mit.** Die Kernfrage der Demo: Wen entscheidet die Gruppe, wie
 viel hängt an der Art des Mittels, und was kostet eine Skala oder eine Macht?
 
 ## Befunde und Korrekturen gegenüber dem Plan
 
 - **Die Hypothese „die Rangfolge kann keiner wollen“ gilt für die Ordnung, nicht für den Sieger.** Bei 5 Mitgliedern und mäßiger Verschiedenheit ist der Sieger in 98,0 % der Matrizen
-  der Beste von jemandem, die Gruppenordnung aber nur in 10,5 % genau die Ordnung eines Mitglieds.
+  der Beste von jemandem, die Gruppenordnung aber nur in 10,5 % genau die Ordnung eines Mitglieds (die ganze Rangfolge der 12 Alternativen muss übereinstimmen; bei weniger Alternativen geschieht das deutlich häufiger).
 - **Sie ist die Mitte:** Kendalls τ zwischen Gruppe und Mitglied ist 0,79, zwischen je zwei Mitgliedern 0,67; der mittlere Regret ist 2,8 % der eigenen Nutzenspannweite, der des am
   schlechtesten Gestellten 9,7 %. Bei 9 sehr verschiedenen Mitgliedern sind es 6,2 % und 27,2 %.
-- **Die Art des Mittels entscheidet in jedem zehnten Fall:** Das geometrische Mittel der Gewichte statt des arithmetischen ändert den Sieger in 11,5 % der Matrizen. Urteile oder
-  Prioritäten aggregieren fast nie (0,0 / 0,5 / 1,5 % bei Rauschen 0 / 30 / 60 %).
+- **Die Art des Mittels entscheidet bei κ = 10 in etwa jedem zehnten Fall:** Das geometrische Mittel der Gewichte statt des arithmetischen ändert den Sieger in 11,5 % der Matrizen (bei
+  weniger verschiedenen Mitgliedern seltener). Urteile oder Prioritäten zu aggregieren ändert den Sieger bei diesem milden Rauschen selten (in 0,0 / 0,5 / 1,5 % der Matrizen bei Rauschen 0 / 30 / 60 %).
 - **Die Skala ist die eigentliche Falle:** Meldet ein Mitglied seine Nutzen mit einem Faktor zwischen 0,1 und 10, wechselt der Sieger beim Mittel der Nutzen in 7,7 %, beim Median in
-  13,0 %, beim Minimum in 18,2 % der Fälle; beim geometrischen Mittel, beim normierten Mittel, bei Borda und bei den mittleren Gewichten nie.
+  13,0 %, beim Minimum in 18,2 % der Fälle; beim geometrischen Mittel, beim normierten Mittel, bei Borda und bei den mittleren Gewichten nie (diese benutzen die gemeldeten Nutzen nicht).
 - **Mittlere Gewichte und Mittel der Nutzen sind dasselbe, solange alle Mitglieder dieselbe lineare Form haben;** bei gemischten Formen unterscheiden sie sich in 18,5 % der Matrizen.
 - **Jedes Experiment startet auf eigenen Klick** (einige Sekunden bis rund 15 Sekunden).
 

@@ -206,7 +206,7 @@ def verdict_fit(rows: list[dict]) -> tuple[str, str]:
     c = _fit_cell(rows, 5, 10.0)
     z = _fit_cell(rows, 9, 3.0)
     text = (f"Bei 5 Mitgliedern und mäßiger Verschiedenheit (κ = 10) ist der Sieger in {pct(1 - c['nobody'])} % der Matrizen der Beste von jemandem, die Gruppenordnung aber nur in "
-            f"{pct(c['same_order'])} % genau die Ordnung eines Mitglieds. Sie ist die Mitte: Kendalls τ zwischen Gruppe und Mitglied {de(c['tau_group'], 2)}, zwischen je zwei Mitgliedern "
+            f"{pct(c['same_order'])} % genau die Ordnung eines Mitglieds (die ganze Rangfolge muss übereinstimmen). Sie ist die Mitte: Kendalls τ zwischen Gruppe und Mitglied {de(c['tau_group'], 2)}, zwischen je zwei Mitgliedern "
             f"{de(c['tau_members'], 2)}; der Regret ist im Mittel {pct(c['regret_mean'])} % der eigenen Nutzenspannweite, im schlimmsten Mitglied {pct(c['regret_max'])} %. Bei 9 sehr "
             f"verschiedenen Mitgliedern (κ = 3) sind es {pct(z['regret_mean'])} % und {pct(z['regret_max'])} %; nur {pct(z['unanimous'])} % der Gruppen sind einstimmig.")
     return "info", text
@@ -227,7 +227,7 @@ def verdict_judgments(rows: list[dict]) -> tuple[str, str]:
     lo = min(rows, key=lambda r: r["sigma"])
     hi = max(rows, key=lambda r: r["sigma"])
     geo, ari = hi["procedures"]["aip_geo_eigen"], hi["procedures"]["aip_arith_eigen"]
-    text = (f"Urteile oder Prioritäten aggregieren macht kaum einen Unterschied: Bei Rauschen {de(100 * hi['sigma'], 0)} % haben beide denselben Sieger in {pct(hi['aij_aip_same'])} % der "
+    text = (f"Urteile oder Prioritäten aggregieren macht bei diesem milden Rauschen kaum einen Unterschied: Bei Rauschen {de(100 * hi['sigma'], 0)} % haben beide denselben Sieger in {pct(hi['aij_aip_same'])} % der "
             f"Matrizen (Abstand der Gewichte {de(hi['aij_aip_tv'], 3)}; ohne Rauschen {de(lo['aij_aip_tv'], 3)}). Geometrisch gegen arithmetisch dagegen: Der Abstand der Gewichte zum "
             f"arithmetischen Mittel der verborgenen Gewichte ist {de(geo['tv_am'], 3)} gegen {de(ari['tv_am'], 3)}, und der Sieger ist der mit dem arithmetischen Mittel in {pct(geo['win'])} gegen "
             f"{pct(ari['win'])} %.")

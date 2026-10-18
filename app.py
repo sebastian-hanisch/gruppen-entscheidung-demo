@@ -85,7 +85,7 @@ def verdict(kind_text):
 st.title("👥 Gruppe von Entscheidern: wessen Gewichte, welche Aggregation?")
 st.markdown(
     """
-**Die Gruppenentscheidung passt fast immer zu jemandem, die Gruppenordnung fast nie, und die Skala der Urteile entscheidet mit.** Dies ist das vierzehnte Stück der Linie
+**Die Gruppenentscheidung passt fast immer zu jemandem, die Gruppenordnung ist selten genau die eines Mitglieds, und die Skala der Urteile entscheidet mit.** Dies ist das vierzehnte Stück der Linie
 **Mehrkriterien-Ranking**: Mehrere simulierte Entscheider haben **verschiedene verborgene Gewichte** für dieselben Alternativen; die Demo aggregiert ihre Urteile (oder Prioritäten) auf
 sieben Arten und misst, was die Wahl jedem Mitglied kostet (**Regret**) und wie nah die Gruppenordnung an den Mitgliedsordnungen liegt (**Kendalls τ**). Es gibt keine richtige
 Gruppenwahl: Jede Aggregation ist eine Annahme darüber, wie die Mitglieder zählen.
